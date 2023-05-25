@@ -21,3 +21,14 @@ CREATE TABLE operadoras_ativas_ans (
     cargo_representante VARCHAR(50), -- Cargo do representante da operadora
     data_registro_ans DATE           -- Data de registro na ANS da operadora
 );
+
+-- Criação da tabela "demonstracoes_contabeis" para armazenar informações das demonstrações contábeis
+
+CREATE TABLE demonstracoes_contabeis (
+    data DATE,                      -- Data das demonstrações contábeis
+    reg_ans VARCHAR(10),            -- Número de registro da ANS da operadora
+    cd_conta_contabil VARCHAR(10),  -- Código da conta contábil
+    descricao VARCHAR(100),         -- Descrição da conta contábil
+    vl_saldo_inicial DECIMAL(10, 2),-- Valor do saldo inicial da conta contábil
+    vl_saldo_final DECIMAL(10, 2)   -- Valor do saldo final da conta contábil
+);
