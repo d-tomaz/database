@@ -1,5 +1,3 @@
--- Carregamento dos dados do arquivo "Relatorio_cadop.csv" na tabela "operadoras_ativas_ans"
-
 LOAD DATA LOCAL INFILE '/home/odinstudent/repos/database/arquivos/Relatorio_cadop.csv'  -- Especifica o caminho do arquivo a ser carregado
 INTO TABLE operadoras_ativas_ans  -- Especifica a tabela de destino dos dados
 CHARACTER SET latin1  -- Define o conjunto de caracteres como latin1
